@@ -1,0 +1,55 @@
+﻿@page
+@model GPU.Pages.GPUs.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>GPU</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.Brand)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.Brand)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.ReleaseYear)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.ReleaseYear)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.MemoryInMB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.MemoryInMB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU.LaunchDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPU.LaunchDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.GPU.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
